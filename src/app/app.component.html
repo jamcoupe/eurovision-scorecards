@@ -1,1 +1,3 @@
-Hello world!
+<button (click)="signout()" *ngIf="!loading && isSignedIn">Signout</button>
+<router-outlet></router-outlet>
+<p *ngIf="loading">Loading....</p>
